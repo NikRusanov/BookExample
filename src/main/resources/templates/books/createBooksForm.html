@@ -36,13 +36,12 @@
                             <td><input th:placeholder="Title + ' ' + ${itemStat.count}" th:field="*{books[__${itemStat.index}__].title}" required/></td>
                             <td><input th:placeholder="Author + ' ' + ${itemStat.count}" th:field="*{books[__${itemStat.index}__].author}" required/></td>
                             <td><input th:placeholder="Year + ' ' + ${itemStat.count}" th:field="*{books[__${itemStat.index}__].year}" required/></td>
-                            <td><table>
-                                <tbody>
-                                <tr th:each="book.values">
-                                    <td><input th:placeholder="value" th:field="${value}}"></td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <td><input th:placeholder="value + ' ' + ${itemStat.count}" th:field="*{books[__${itemStat.index}__].values[0]}" required/>
+                                <br>
+                                <input th:placeholder="value + ' ' + ${itemStat.count}" th:field="*{books[__${itemStat.index}__].values[1]}" required/>
+                            </td>
+
+
                         </tr>
                         </tbody>
                     </table>

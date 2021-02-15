@@ -16,12 +16,11 @@ public class Book {
 
     private String year;
 
-    @Autowired
+
     private List<String> values;
 
     public Book() {
         values = new ArrayList<>();
-        values.add("1");
     }
 
     public long getId() {

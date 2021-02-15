@@ -39,7 +39,8 @@
                             <td><input th:placeholder="Author + ' ' + ${itemStat.count}" th:name="|books[${itemStat.index}].author|"
                                        th:value="${book.getAuthor()}" required/></td>
                             <td><input th:placeholder="Year + ' ' + ${itemStat.count}" th:name="|books[${itemStat.index}].year|"
-                                       th:value="${book.getYear()}" required/></td>
+                                       th:value="${book.getYear()}" required/>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
